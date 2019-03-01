@@ -1,0 +1,79 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.block-head
+	.block-title
+		display: inline-block
+		margin-right: 30px
+
+.stages
+	padding: 50px 0
+	background-color: $grey
+	.stages-list
+		margin: 30px 0 10px 0
+		&:after
+			content: ''
+			display: block
+			clear: both
+		.stages-item
+			position: relative
+			background-image: url('../img/icons/border.svg')
+			background-repeat: no-repeat
+			background-position: 0 75%
+			background-size: contain
+			float: left
+			width: 25%
+			padding: 0 10px 0 20px
+			height: 280px
+			&:first-child
+				padding: 0 10px 0 0
+				.date
+					left: 0
+			h2
+				font-size: 64px
+				color: #000
+				opacity: .2
+				margin: 0
+				line-height: 1.2
+			p
+				font-family: $font_bold
+				color: #141414
+			.date
+				position: absolute
+				bottom: 0
+				left: 20px
+			.final-reward
+				position: absolute
+				top: 63%
+				right: -20px
+
+
+//ALWAYS END
+@import "media"

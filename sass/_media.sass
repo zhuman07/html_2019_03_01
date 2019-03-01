@@ -1,0 +1,193 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.contacts
+		.phones
+			a
+				display: block
+		.blue-btn
+			position: relative
+			top: 8px
+
+	.menu
+		text-align: center
+		ul
+			display: block
+			margin-bottom: 10px
+		.pdf
+			float: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.contacts
+		.main-partners
+			display: block
+			margin-right: 0
+			margin-bottom: 10px
+			.main-partners-item
+				margin-bottom: 10px
+		.phones
+			position: relative
+			top: 10px
+			a
+				display: inline-block
+		.blue-btn
+			top: 0
+
+	.stages
+		padding: 40px 0
+		background-color: $grey
+		.stages-list
+			margin: 20px 0 10px 0
+			.stages-item
+				background-position: 0 70%
+				width: 50%
+				padding: 0 10px 0 20px
+				height: 230px
+				margin-bottom: 20px
+				&:first-child
+					padding: 0 10px 0 20px
+					.date
+						left: 20px
+				h2
+					font-size: 44px
+				.final-reward
+					top: 58%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.contacts
+		text-align: center
+		.main-partners
+			.main-partners-item
+				text-align: left
+				display: inline-block
+		.phones
+			margin-bottom: 20px
+			display: block
+			position: static
+			top: 0
+			a
+				display: block
+		.btn-wrapper
+			float: none
+
+	.block-title
+		font-size: 26px
+
+	.competition
+		padding: 0 0 25px 0
+		.competition-block
+			padding: 30px 0 0 0
+		p
+			margin: 15px 0
+		.competition-info
+			width: auto
+			p
+				width: auto
+		.competition-docs
+			margin-top: 20px
+			a
+				margin-right: 20px
+
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.contacts
+		.main-partners
+			.main-partners-item
+				margin-right: 0
+				text-align: center
+				img
+					margin-right: 0
+					margin-bottom: 5px
+				span
+					display: block
+
+	.menu
+		ul
+			li
+				display: block
+
+	.competition-rewards
+		.competition-reward-item
+			text-align: center
+			img
+				margin-bottom: 10px
+				margin-right: 0
+			p
+				width: 100%
+				display: block
+
+	.stages
+		padding: 30px 0
+		.stages-list
+			.stages-item
+				float: none
+				background-position: 0 65%
+				width: 100%
+				height: 220px
+				.final-reward
+					top: 55%
+					right: 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,155 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $font_regular
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+*
+	outline: none
+	a
+		&:hover, &:focus, &:active
+			text-decoration: none
+
+body.main
+	header
+		background-image: url('../img/bg.png')
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+
+.blue-btn
+	display: inline-block
+	background-color: #41a6dc
+	color: #fff
+	padding: 12px 36px
+	font-family: $font_medium
+	border-radius: 5px
+	&:hover
+		background-color: #141414
+		color: #fff
+
+header
+	background-color: $grey
+.contacts
+	padding: 25px 0
+	&:after
+		content: ''
+		display: block
+		clear: both
+	.main-partners
+		vertical-align: middle
+		display: inline-block
+		margin-right: 30px
+		.main-partners-item
+			margin-right: 20px
+			display: inline-block
+			img
+				margin-right: 10px
+			span
+				display: inline-block
+				vertical-align: middle
+				color: #515151
+				font-family: $font_medium
+				line-height: 1.2
+	.phones
+		vertical-align: middle
+		display: inline-block
+		a
+			margin-left: 5px
+			font-family: $font_bold
+			color: $dark_blue
+			&:hover
+				text-decoration: underline
+	.btn-wrapper
+		float: right
+.menu
+	background-color: #fff
+	padding: 19px 0
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		display: inline-block
+		li
+			display: inline-block
+			margin-right: 20px
+			a
+				font-family: $font_bold
+				color: $dark_blue
+				&:hover
+					opacity: .6
+	.pdf
+		float: right
+
+.pdf
+	color: #41a6dc
+	padding-left: 20px
+	font-family: $font_bold
+	background-image: url('../img/icons/pdf.svg')
+	background-repeat: no-repeat
+	background-position: 0 50%
+	display: inline-block
+
+footer
+	background-color: $dark_blue
+	.contacts
+		.main-partners
+			.main-partners-item
+				span
+					color: #fff
+		.phones
+			a
+				color: #fff
+
+.block-title
+	font-family: $font_black
+	font-size: 32px
+	color: #fff
+	&.blue-block-title
+		color: $dark_blue
+
+.competition
+	padding: 0 0 35px 0
+	.competition-block
+		padding: 70px 0 0 0
+	p
+		font-family: $font_bold
+		color: #383838
+		margin: 20px 0
+	.competition-info
+		width: 730px
+		p
+			width: 605px
+	.competition-docs
+		margin-top: 25px
+		a
+			margin-right: 25px
+
+.competition-rewards
+	margin-top: 30px
+	.competition-rewards-title
+		font-family: $font_bold
+		color: $dark_blue
+		margin-bottom: 10px
+	.competition-reward-item
+		margin-bottom: 10px
+		background-color: rgba(31, 43, 84, 0.7)
+		padding: 24px
+		img
+			vertical-align: middle
+			margin-right: 24px
+		p
+			display: inline-block
+			font-family: $font_bold
+			color: #fff
+			width: 237px
+			vertical-align: middle
+			margin: 0
