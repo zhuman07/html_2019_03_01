@@ -5,75 +5,295 @@
 @import "app/libs/animate/animate.sass"
 
 *::-webkit-input-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *:-moz-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *::-moz-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
-	opacity: 1
+  color: #666
+  opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+  color: #666
+
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+  color: #666
 
 //Custom Styles Here
 .block-head
-	.block-title
-		display: inline-block
-		margin-right: 30px
+  .block-title
+    display: inline-block
+    margin-right: 30px
 
 .stages
-	padding: 50px 0
-	background-color: $grey
-	.stages-list
-		margin: 30px 0 10px 0
-		&:after
-			content: ''
-			display: block
-			clear: both
-		.stages-item
-			position: relative
-			background-image: url('../img/icons/border.svg')
-			background-repeat: no-repeat
-			background-position: 0 75%
-			background-size: contain
-			float: left
-			width: 25%
-			padding: 0 10px 0 20px
-			height: 280px
-			&:first-child
-				padding: 0 10px 0 0
-				.date
-					left: 0
-			h2
-				font-size: 64px
-				color: #000
-				opacity: .2
-				margin: 0
-				line-height: 1.2
-			p
-				font-family: $font_bold
-				color: #141414
-			.date
-				position: absolute
-				bottom: 0
-				left: 20px
-			.final-reward
-				position: absolute
-				top: 63%
-				right: -20px
+  padding: 50px 0
+  background-color: $grey
+  .stages-list
+    margin: 30px 0 10px 0
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .stages-item
+      position: relative
+      background-image: url('../img/icons/border.svg')
+      background-repeat: no-repeat
+      background-position: 0 75%
+      background-size: contain
+      float: left
+      width: 25%
+      padding: 0 10px 0 20px
+      height: 280px
+      &:first-child
+        padding: 0 10px 0 0
+        .date
+          left: 0
+      h2
+        font-size: 64px
+        color: #000
+        opacity: .2
+        margin: 0
+        line-height: 1.2
+      p
+        font-family: $font_bold
+        color: #141414
+      .date
+        position: absolute
+        bottom: 0
+        left: 20px
+      .final-reward
+        position: absolute
+        top: 63%
+        right: -20px
 
+.competition-news
+  padding: 55px 0
+  background-image: url('../img/bg2.jpg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(31, 43, 84, 0.95)
+  .competition-news-item
+    margin: 20px 0
+    .competition-news-item-date
+      color: #fff
+      span
+        font-size: 64px
+        color: #41a6dc
+    h2
+      font-family: $font_bold
+      color: #fff
+      font-size: 14px
+      margin: 0
+
+.ratings
+  padding: 50px 0
+  background-color: $grey
+  .ratings-ruler
+    position: relative
+    background-image: url('../img/icons/ruler.svg')
+    background-repeat: no-repeat
+    background-position: 50% 100%
+    background-size: contain
+    padding: 150px 0 0 0
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .person-rating
+      position: absolute
+      bottom: 25px
+      width: 40px
+      height: 40px
+      .person-rating-img
+        width: 40px
+        height: 40px
+        overflow: hidden
+        border-radius: 50%
+        border: 1px solid #41a6dc
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15)
+        img
+          width: 100%
+      .person-rating-info
+        position: absolute
+        top: -130px
+        left: -160px
+        width: 300px
+        background-color: #fff
+        padding: 15px
+        border-radius: 5px
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1)
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 15px 7.5px 0 7.5px
+          border-color: #ffffff transparent transparent transparent
+          bottom: -15px
+          right: 112px
+        .person-rating-info-score
+          font-family: $font_bold
+          color: #a6a6a6
+          span
+            color: #cdbb8a
+        p
+          font-family: $font_bold
+          color: #141414
+          margin: 5px 0
+    .ratings-ruler-part
+      float: left
+      width: 25%
+      line-height: 1
+      height: 50px
+      position: relative
+      span
+        font-size: 12px
+        color: #8d8d8d
+      .left-number
+        position: absolute
+        left: 10px
+        bottom: 0
+      .right-number
+        position: absolute
+        right: 10px
+        bottom: 0
+
+.commission
+  padding: 50px 0
+  .commission-members
+    margin-top: 60px
+    margin-left: -15px
+    margin-right: -15px
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .commission-members-item
+      float: left
+      width: 20%
+      margin-bottom: 10px
+      padding: 15px
+      .commission-members-item-border
+        border-radius: 5px
+        border: solid 1px #f3f5f6
+        padding: 20px
+        position: relative
+        img
+          position: absolute
+          width: 55px
+          height: 55px
+          border-radius: 50%
+          box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1)
+          top: -28px
+          left: 20px
+        h2
+          font-family: $font_bold
+          font-size: 14px
+          color: #141414
+          margin-top: 30px
+        p
+          font-size: 12px
+          color: #8a8a8a
+          margin: 0
+
+.gallery
+  background-color: $grey
+  padding: 50px 0
+  position: relative
+  .gallery-slider-arrows
+    position: absolute
+    top: 10px
+    right: 15px
+    span
+      display: inline-block
+      width: 36px
+      height: 36px
+      background-color: #fff
+      border-radius: 50%
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      cursor: pointer
+      margin-left: 5px
+    .left-arrow
+      background-image: url('../img/icons/arrow-left.svg')
+    .right-arrow
+      background-image: url('../img/icons/arrow-right.svg')
+  .gallery-slider
+    overflow: hidden
+    margin: 0 -15px
+    margin-top: 20px
+    .gallery-slider-item
+      display: inline-block
+      margin: 0 15px
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000)
+        top: 0
+        left: 0
+        z-index: 0
+        opacity: .6
+      img
+        width: 100%
+      a
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        font-family: $font_black
+        font-size: 32px
+        color: #fff
+        z-index: 1
+        span
+          position: absolute
+          bottom: 15px
+          left: 28px
+
+
+.organizers
+  padding: 50px 0
+  .organizers-logos
+    margin-top: 60px
+    &:after
+      content: ''
+      display: block
+      clear: both
+    .organizers-logos-item
+      float: left
+      width: 16.66%
+      text-align: center
+      margin-bottom: 10px
+      height: 60px
+      &:first-child
+        text-align: left
+      &:last-child
+        text-align: right
 
 //ALWAYS END
 @import "media"

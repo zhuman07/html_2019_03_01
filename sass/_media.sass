@@ -59,6 +59,17 @@
 				.final-reward
 					top: 58%
 
+	.commission
+		padding: 30px 0
+		.commission-members
+			margin-top: 40px
+			text-align: center
+			.commission-members-item
+				float: none
+				display: inline-block
+				width: 50%
+				text-align: left
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
@@ -96,7 +107,33 @@
 			a
 				margin-right: 20px
 
-	
+	.ratings
+		.ratings-ruler
+			.person-rating
+				.person-rating-info
+					left: auto
+					right: 0
+					&:after
+						right: 3px
+
+	.commission
+		.commission-members
+			.commission-members-item
+				display: block
+				width: 100%
+
+	.organizers
+		padding: 30px 0
+		.organizers-logos
+			margin-top: 40px
+			.organizers-logos-item
+				width: 33.33%
+				text-align: center
+				&:first-child
+					text-align: center
+				&:last-child
+					text-align: center
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -159,6 +196,12 @@
 				.final-reward
 					top: 55%
 					right: 0
+
+	.organizers
+		.organizers-logos
+			.organizers-logos-item
+				width: 100%
+				float: none
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
