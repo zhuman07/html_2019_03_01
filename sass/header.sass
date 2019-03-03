@@ -159,3 +159,137 @@ footer
 
 .bg-grey
 	background-color: $grey
+
+.mob-menu-icon
+	position: fixed
+	top: 20px
+	right: 20px
+	text-align: center
+	padding: 0
+	border-radius: 50%
+	z-index: 11
+	display: none
+	vertical-align: middle
+	background-color: $dark_blue
+	width: 28px
+	height: 28px
+	#menu-toggle
+		display: inline-block
+		margin: 0
+	&.active
+		.menu-close-btn-text
+			display: inline-block
+
+.tb-menu-toggle
+	border: 0
+	position: relative
+	background: transparent
+	cursor: pointer
+	width: 100%
+
+.tb-menu-toggle i
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 2px
+	transition: all .2s
+	background-color: #fff !important
+
+.tb-menu-toggle i:nth-child(2)
+	top: 5px
+
+.tb-menu-toggle i:nth-child(3)
+	top: 10px
+	width: 100%
+
+.tb-menu-toggle.tb-animate-toggle i:first-child
+	top: 35%
+	transform: rotate(45deg)
+
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3)
+	opacity: 0
+
+
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2)
+	top: 35%
+	transform: rotate(-45deg)
+
+.tb-active-toggle
+	top: 2px
+	i
+		background: #fff !important
+
+.mobile
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 2
+	background-color: #fff
+	padding: 70px 20px 10px 20px
+	display: none
+	.pdf
+		margin-bottom: 50px
+	.mobile-menu
+		list-style: none
+		margin: 0 0 30px 0
+		padding: 0 0 10px 0
+		border-bottom: 1px solid $dark_blue
+		>li
+			margin-bottom: 20px
+			position: relative
+			&.parent-item
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					width: 2px
+					height: 11px
+					right: 4px
+					top: 0
+					background-color: #fff
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					width: 11px
+					height: 2px
+					right: 0
+					top: 4px
+					background-color: #fff
+				&.active
+					>ul
+						display: block
+
+					&:before
+						display: none
+			>a
+				color: $dark_blue
+				font-family: $font_medium
+			>ul
+				display: none
+				list-style: none
+				margin: 10px 0 0 0
+				padding: 5px 0 0 20px
+				&:before
+					content: ''
+					display: block
+					width: 50px
+					height: 2px
+					background-color: #c5a455
+					position: absolute
+					left: 0
+					top: 32px
+				>li
+					margin: 5px 0
+					>a
+						color: $dark_blue
+						font-family: $font_medium
+
+.scroll-off
+	#wrapper
+		height: 0
+		width: 0
+		opacity: 0
+		overflow: hidden
